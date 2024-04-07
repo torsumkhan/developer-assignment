@@ -1,21 +1,35 @@
 import React, { useState } from "react";
 import "./TeamModal.css";
-import phone from "../../_assets/_Icons/Vector.svg";
-import linkedin from "../../_assets/_Icons/linkedin_2.svg";
-import email from "../../_assets/_Icons/mail_2.svg";
-import closeButton from "../../_assets/_Icons/X.svg";
-import previous from "../../_assets/_Icons/Previous.svg";
-import next from "../../_assets/_Icons/Next.svg";
+import { ReactComponent as PhoneIcon } from "../../_assets/_Icons/Vector.svg";
+import { ReactComponent as LinkedInIcon } from "../../_assets/_Icons/linkedin_2.svg";
+import { ReactComponent as EmailIcon } from "../../_assets/_Icons/mail_2.svg";
+import { ReactComponent as CloseButtonIcon } from "../../_assets/_Icons/X.svg";
+import { ReactComponent as PreviousIcon } from "../../_assets/_Icons/Previous.svg";
+import { ReactComponent as NextIcon } from "../../_assets/_Icons/Next.svg";
+import { TeamMember } from "../MainSection/MainSection";
 
-const TeamModal = ({ teamMember, closeTeamModal }) => {
+interface TeamModalProps {
+  closeTeamModal: () => void;
+  isOpen: boolean;
+  teamMember: TeamMember | null;
+}
+
+const TeamModal: React.FC<TeamModalProps> = ({
+  closeTeamModal,
+  isOpen,
+  teamMember,
+}) => {
+  if (!isOpen || !teamMember) {
+    return null;
+  }
+
   const sentences = teamMember.bio.split(/(?<=[.?!])\s+(?=[A-Z])/);
 
-  const bioParagraphs = [];
+  const bioParagraphs: string[] = [];
   let currentParagraph = "";
 
   sentences.forEach((sentence, index) => {
     currentParagraph += sentence + " ";
-    // Add line break after every 4th sentence
     if ((index + 1) % 4 === 0 || index === sentences.length - 1) {
       bioParagraphs.push(currentParagraph.trim());
       currentParagraph = "";
@@ -27,10 +41,9 @@ const TeamModal = ({ teamMember, closeTeamModal }) => {
       <div className="overlay">
         <div className="team-modal-body">
           <div className="team-modal-img">
-            <img src={teamMember.headshot} />
+            <img src={teamMember.headshot} alt="Team member headshot" />
           </div>
           <div className="team-member-details-section">
-            {" "}
             <div className="title-section">
               <h4>
                 {teamMember.designation
@@ -41,19 +54,22 @@ const TeamModal = ({ teamMember, closeTeamModal }) => {
               <div className="contact-details">
                 <a className="contact-icons">
                   <span>
-                    <img src={phone} />
+                    <PhoneIcon />
                   </span>
                   {teamMember.number}
                 </a>
-                <a className="contact-icons" href={teamMember.email}>
+                <a
+                  className="contact-icons"
+                  href={`mailto:${teamMember.email}`}
+                >
                   <span>
-                    <img src={email} />
+                    <EmailIcon />
                   </span>
                   Email Me
                 </a>
                 <a className="contact-icons" href={teamMember.linkedin}>
                   <span>
-                    <img src={linkedin} />
+                    <LinkedInIcon />
                   </span>
                   LinkedIn
                 </a>
@@ -72,7 +88,7 @@ const TeamModal = ({ teamMember, closeTeamModal }) => {
               <div className="prev-btn">
                 <a>
                   <span className="prev">
-                    <img src={previous} />
+                    <PreviousIcon />
                   </span>
                   Previous
                 </a>
@@ -81,7 +97,7 @@ const TeamModal = ({ teamMember, closeTeamModal }) => {
                 <a>
                   Next
                   <span className="next">
-                    <img src={next} />
+                    <NextIcon />
                   </span>
                 </a>
               </div>
@@ -89,7 +105,7 @@ const TeamModal = ({ teamMember, closeTeamModal }) => {
           </div>
 
           <button className="close-modal" onClick={closeTeamModal}>
-            <img src={closeButton} />
+            <CloseButtonIcon />
           </button>
         </div>
       </div>

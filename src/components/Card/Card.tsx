@@ -1,8 +1,22 @@
 import React from "react";
 import "./Card.css";
-import arrowSvg from "../../_assets/_Icons/Next.svg";
+import { ReactComponent as Arrow } from "../../_assets/_Icons/Next.svg";
 
-const Card = ({ name, title, headshot, designation, openTeamModal }) => {
+interface CardProps {
+  name: string;
+  title: string;
+  headshot: string;
+  designation?: string;
+  openTeamModal: () => void;
+}
+
+const Card: React.FC<CardProps> = ({
+  name,
+  title,
+  headshot,
+  designation,
+  openTeamModal,
+}) => {
   const handleClick = () => {
     openTeamModal();
   };
@@ -18,10 +32,9 @@ const Card = ({ name, title, headshot, designation, openTeamModal }) => {
             </a>
           </h4>
           <div className="card-arrow">
-            <img src={arrowSvg} />
+            <Arrow />
           </div>
         </div>
-
         <p className="team-link">{title}</p>
       </div>
     </>

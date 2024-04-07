@@ -3,12 +3,24 @@ import teamData from "../../bioData.json";
 import CardContainer from "../CardContainer/CardContainer";
 import TeamModal from "../TeamModal/TeamModal";
 
-const MainSection = () => {
-  const [teamModalIsOpen, setTeamModalIsOpen] = useState(false);
-  const [selectedMember, setSelectedMember] = useState(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
+const teams = teamData.team as unknown as TeamMember[];
 
-  const openTeamModal = (member) => {
+export interface TeamMember {
+  name: string;
+  title: string;
+  designation?: string;
+  number: string;
+  email: string;
+  linkedin: string;
+  headshot: string;
+  bio: string;
+}
+
+const MainSection: React.FC = () => {
+  const [teamModalIsOpen, setTeamModalIsOpen] = useState(false);
+  const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
+
+  const openTeamModal = (member: TeamMember) => {
     setSelectedMember(member);
     setTeamModalIsOpen(true);
   };
@@ -26,7 +38,7 @@ const MainSection = () => {
 
   return (
     <>
-      <CardContainer teamData={teamData.team} openTeamModal={openTeamModal} />
+      <CardContainer teamData={teams} openTeamModal={openTeamModal} />
       {teamModalIsOpen && (
         <TeamModal
           closeTeamModal={closeTeamModal}

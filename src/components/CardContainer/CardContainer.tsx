@@ -1,7 +1,17 @@
 import React from "react";
 import Card from "../Card/Card";
+import { TeamMember } from "../MainSection/MainSection";
 
-const CardContainer = ({ teamData, openTeamModal }) => {
+interface CardContainerProps {
+  teamData: TeamMember[];
+  openTeamModal: (member: TeamMember) => void;
+}
+
+const CardContainer: React.FC<CardContainerProps> = ({
+  teamData,
+  openTeamModal,
+}) => {
+  console.log(teamData);
   return (
     <div className="card-container">
       {teamData.map((member) => (

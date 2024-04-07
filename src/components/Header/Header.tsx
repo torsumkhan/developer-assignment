@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <section className="header-container">
       <div className="left-heading">
