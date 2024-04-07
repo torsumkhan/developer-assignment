@@ -11,7 +11,6 @@ const CardContainer: React.FC<CardContainerProps> = ({
   teamData,
   openTeamModal,
 }) => {
-  console.log(teamData);
   return (
     <div className="card-container">
       {teamData.map((member) => (
