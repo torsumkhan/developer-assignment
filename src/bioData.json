@@ -1,0 +1,50 @@
+{
+  "section_intro": [
+    {
+      "title": "Capitalizing on complementary skill sets",
+      "text": "Led by three partners, our team is able to capitalize on vastly varied professional backgrounds and complementary skill sets to deliver a strong service offering to our clients."
+    }
+  ],
+  "team": [
+    {
+      "name": "Alexandre Picard-Hooper",
+      "title": "Portfolio Manager & Wealth Advisor",
+      "designation": "CFA",
+      "number": "450-656-3014",
+      "email": "first.last@rbc.com",
+      "linkedin": "https://www.linkedin.com/",
+      "headshot": "https://ca.rbcwealthmanagement.com/documents/3447355/3447369/Alex.png",
+      "bio": "In his youth, Alex played competitive hockey in the Quebec Major Junior Hockey League (QMJHL). As he built up the core elements of sportsmanship – hard work, commitment, and dedication – he never lost focus in his studies, earning the title of the best student athlete across all three of the major junior hockey leagues in Canada. Alex brought his signature head-down determination to his post-secondary schooling at McGill University, obtaining a Bachelor of Commerce, specializing in finance and accounting, while he played for the McGill Redmen, achieving the title of best college player in the country in 2013. After earning the Chartered Financial Analyst (CFA) designation in 2014, Alex began his financial career in earnest as an investment advisor for a major financial institution. Adept at making connections with other wealth professionals, he gradually developed his practice through referrals paired with service excellence. Two years into this vocation – through none other than a recreational hockey league – Alex developed a chance friendship with Phil, who worked for the same institution as him. Keen to put the power of teamwork to work for them and bound by their shared determination to offer more to their clients, the pair formed a partnership and came over to RBC Dominion Securities in 2016. As portfolio manager and wealth advisor, Alex analyzes markets and translates his findings into savvy investment insights, which he shares with his team to make collective portfolio decisions for clients. He also coordinates and participates in various client meetings to organize and maintain a tailored, long-term wealth approach for each of them. As well, leveraging his established skills in connection-building with fellow financial professionals, he executes business development strategies for our practice. While Alex’s hockey-playing days are behind him, when he’s not working, he likes to keep fit through golf, tennis, mountain biking, and alpine skiing."
+    },
+    {
+      "name": "Philippe de Beaumont",
+      "title": "Portfolio Manager & Wealth Advisor",
+      "designation": ["F.Pl.", "CIM"],
+      "number": "450-656-3025",
+      "email": "first.last@rbc.com",
+      "linkedin": "https://www.linkedin.com/",
+      "headshot": "https://ca.rbcwealthmanagement.com/documents/3447355/3447369/Phil.png",
+      "bio": "“I love competition, and all the values that go along with it,” says Phil who played high-level soccer when he was younger and continues to engage in sports regularly, including competing in multiple triathlons, such as the renowned full Ironman in Mont-Tremblant. While he leaned toward marketing when he started his Cooperative Bachelor of Business Administration and Management at Université de Sherbrooke, Phil ended up continuing his studies in finance and landed a job at a major financial institution upon graduating in 2009. One to give his all to everything he does, he quickly distinguished himself among his peers, especially for his young age, prompting his employer to promote him rapidly to financial planner and Phil completed the Financial Planner diploma from Institut québécois de planification financière. “But I wanted to offer wealthy families more,” says Phil, whose ambition connected him with Alex in 2015, and led the two of them to found their own investment advice practice at RBC Dominion Securities the following year. As portfolio manager and wealth advisor, Phil spends his days connecting with clients and coordinating the myriad elements required to help them make the most of their circumstances, opportunities, and assets. Process oriented, intentional, and meticulous, Phil scours RBC Wealth Management and beyond for relevant and useful offerings. “When I invite a new client to join us, I want to be able to look at them and say with confidence that this is the best possible place for their wealth,” he says. As well, as a Chartered Investment Manager (CIM), Phil participates in strategic investment decision-making, and – true to his strong entrepreneurial roots – he oversees business development, communications, and service standards for our practice. In his off hours, Phil’s two young kids keep him busy. Aligned with his athletic upbringing, in addition to regularly participating in triathlons, he likes to jog, cycle, golf, and play hockey in his free time. Passionate about giving back to the community, Phil has been deeply involved with various charitable pursuits over the last 15 years."
+    },
+    {
+      "name": "Steve Foley",
+      "title": "Investment Advisor",
+      "designation": "",
+      "number": "450-656-0174",
+      "email": "first.last@rbc.com",
+      "linkedin": "",
+      "headshot": "https://ca.rbcwealthmanagement.com/documents/3447355/3447369/Steve.png",
+      "bio": "Steve is a veteran of the financial industry, brandishing unparalleled expertise built upon four decades of experience at the highest levels of capital markets at some of the most esteemed organizations in North America. From the bustling equity trading desks of Wall Street to the secluded boardrooms of Canada’s top private and public corporations, Steve has experienced more than most. “I was on the front lines of every market boom and downturn since 1983,” says Steve, whose deep expertise is complemented by his signature humble curiosity. Having built up and led multiple high-profile, high-performing equity teams, Steve is a strong believer that one plus one plus one can equal much more than three. “Teamwork has tremendous power,” he says. When he met Phil and Alex in the winter of 2021, it was a milestone moment for all three of them. Seeking a place where he could leverage his know-how through top-notch service, Steve left his post as vice-chairman of RBC Capital Markets to join Alex and Phil as a partner. As investment advisor, Steve leans on his independent thinking, best-in-class research, and relationship-building skills to guide clients to and through financial success. A Chartered Financial Analyst (CFA), he follows multiple methodologies to perform in-depth analyses on the markets, asset classes, and individual securities, which add great value to our team’s portfolio decisions and long-term investment thinking. Steve’s ongoing focus is offering more to his partners and clients. With his differentiated background, Steve brings tremendous benefits to all of our clients. Full of energy, Steve has an insatiable passion for markets. A self-professed “investment junkie,” he spends his off-time consuming as much financially geared content as he can, be it books, newspapers, or podcasts. He has been married to his wife nearly as long as he’s been married to the markets and the pair have four grown kids. Committed to giving back to the community, Steve has contributed his time to coaching multiple children’s sports leagues, as well as to causes such as hospitals and disadvantaged children."
+    }
+  ],
+  "section_cta": [
+    {
+      "title": "Let’s work together to make the most of your wealth",
+      "text": "Whatever your financial requirements, challenges, opportunities, and goals, our team has the experience and expertise to help you maximize them.",
+      "link": {
+        "url": "https://ca.rbcwealthmanagement.com/contact",
+        "title": "Work with us"
+      }
+    }
+  ]
+}

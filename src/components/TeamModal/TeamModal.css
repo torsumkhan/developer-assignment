@@ -1,0 +1,177 @@
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.team-modal,
+.overlay {
+  width: 100vw;
+  height: 200vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(0, 49, 104, 0.9);
+}
+
+.team-modal-body {
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  padding: 100px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 34px;
+}
+
+@media (max-width: 900px) {
+  .team-modal-body {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    padding: 15px;
+    height: 100vh;
+    align-items: center;
+  }
+}
+
+.team-modal-img {
+  width: 25%;
+}
+
+@media (max-width: 900px) {
+  .team-modal-img {
+    width: 70%;
+    height: auto;
+  }
+}
+
+.team-modal-img img {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .team-modal-img img {
+    height: auto;
+    padding-top: 24px;
+  }
+}
+
+.team-member-details-section {
+  width: 60%;
+}
+
+@media (max-width: 900px) {
+  .team-member-details-section {
+    width: 80%;
+    height: 100%;
+    overflow-y: scroll;
+  }
+}
+
+.team-member-details-section p,
+a {
+  font-family: "Roboto";
+}
+
+.title-section h4 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: lighter;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 760px) {
+  .title-section h4 {
+    font-size: 18px;
+  }
+}
+
+.title-section p {
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.team-member-bio p {
+  color: white;
+  font-weight: 300;
+}
+
+.contact-details {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 18px;
+}
+
+@media (max-width: 900px) {
+  .contact-details {
+    flex-direction: column;
+  }
+}
+
+.contact-details a {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300 !important;
+}
+
+.contact-details .contact-icons span {
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.team-member-bio {
+  margin-top: 20px;
+}
+
+.team-member-bio p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.team-member-prev-next {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team-member-prev-next a {
+  font-family: "RBCDisplay";
+  font-size: 18px;
+  color: #fff;
+}
+
+.team-member-prev-next span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.team-member-prev-next .prev {
+  margin-right: 34px;
+}
+
+.team-member-prev-next .next {
+  margin-left: 34px;
+}
+
+.close-modal {
+  position: absolute;
+  right: 100px;
+  padding: 5px 7px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .close-modal {
+    top: 100px;
+    right: 30px;
+  }
+}
