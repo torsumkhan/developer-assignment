@@ -74,7 +74,7 @@ body.active-modal {
 
 .team-member-details-section p,
 a {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 .title-section h4 {

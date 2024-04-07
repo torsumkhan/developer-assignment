@@ -61,7 +61,7 @@
   font-size: 20px;
   color: #252525;
   line-height: 30px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 690px) {
